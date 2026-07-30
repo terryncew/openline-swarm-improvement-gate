@@ -1,6 +1,11 @@
 {
-  "file_count": 35,
+  "file_count": 36,
   "files": [
+    {
+      "bytes": 771,
+      "path": ".github/workflows/ci.yml",
+      "sha256": "a23769bc19e460a6c096a8c912dd4b93bc72d85071301e431242805ccd668f4e"
+    },
     {
       "bytes": 91,
       "path": ".gitignore",
@@ -12,14 +17,14 @@
       "sha256": "b9e99731eda84c2a88ae3c990b885c6bfb9f1baa9a4da81081d98dbcfe7f4e02"
     },
     {
-      "bytes": 2910,
+      "bytes": 3061,
       "path": "CHANGELOG.md",
-      "sha256": "24e40de7a39b3ac9f20a51c4efd48a684400239070b869e020d4910ebf4b9ffb"
+      "sha256": "e1cdf8ee7746c8532fe96ab114d93fb78664644ade45d8b88629da8b88481caa"
     },
     {
-      "bytes": 2929,
+      "bytes": 3706,
       "path": "CHANGE_RECEIPT.jsonl",
-      "sha256": "aa65b95031076733a11f5fa278b346a79eee709770a059d1b64b50a8d1083391"
+      "sha256": "2ca5411d4037c32a1fff83c356c7b3ad781fbe0e3b31b7dd5b6e8fb53452ab56"
     },
     {
       "bytes": 985,
@@ -32,14 +37,14 @@
       "sha256": "dde3b744dcf7c76cc6084a0e160267fc97b864c0b7e732d45e4a601d9137624b"
     },
     {
-      "bytes": 20829,
+      "bytes": 20823,
       "path": "RELEASE_VERIFICATION.json",
-      "sha256": "68f172a5a25439316e07715a0ccc87c3492f60c5baea1c8fdab75b6bbc59e58b"
+      "sha256": "8f1fc7a8c932d59b8031fe2e9966914f1950dec70e67ad9483e04423d117f239"
     },
     {
-      "bytes": 2160,
+      "bytes": 2585,
       "path": "RUN_REPORT.json",
-      "sha256": "79698e36a2480b5e00f3a8d91d86757641df1521bd7da4e1ce3260357fc06839"
+      "sha256": "251c5b06416bcaff5e98c70d7482ee2560d02e4d61a0a575f218ec07ea004117"
     },
     {
       "bytes": 7989,

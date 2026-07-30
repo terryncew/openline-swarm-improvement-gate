@@ -11,6 +11,22 @@
     "schema": "openline.swarm_improvement_gate.adversarial_signature_probe.v0.3",
     "unexpected_promotions": 0
   },
+  "ci": {
+    "commands": [
+      "python -m unittest discover -s tests -v",
+      "python -m olp_swarm_gate.successor_benchmark",
+      "python scripts/release_check.py"
+    ],
+    "github_status": "PENDING_PUSH",
+    "local_equivalence_verified": true,
+    "python_version": "3.11",
+    "triggers": [
+      "push:main",
+      "pull_request",
+      "workflow_dispatch"
+    ],
+    "workflow": ".github/workflows/ci.yml"
+  },
   "claim": "Receiver-pinned Ed25519 provenance is required before a successor appraisal can support PROMOTE; copied evaluator metadata alone is insufficient.",
   "claim_boundary": "A valid signature proves possession of the receiver-pinned evaluator private key, not organizational independence. If the successor controls that key, receiver policy, or the receiver evidence store, the independence assumption is violated. The bundled benchmark key is a deterministic public test fixture and must not be used as a production trust anchor.",
   "feature": "successor_promotion_signed_appraisal",

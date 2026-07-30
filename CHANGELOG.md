@@ -12,6 +12,7 @@ Closes the evaluator-impersonation seam found during adversarial review.
 - Replaces the pytest-only release suite with stdlib `unittest`; adds `cryptography>=42` only for the required Ed25519 primitive.
 - Narrows the public claim: cryptographic provenance proves possession of the pinned evaluator key, not organizational independence or secure key custody.
 - Keeps promotion execution outside this repo; Receipt Gate / Verified Commit remains the next enforcer.
+- Adds a GitHub Actions release gate that runs the stdlib unit suite, frozen successor benchmark, and the same full release verification used locally.
 
 ## 0.2.0rc2
 

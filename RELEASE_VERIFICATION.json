@@ -60,7 +60,7 @@
       "name": "stdlib_unittest_suite",
       "passed": true,
       "returncode": 0,
-      "stderr": "unittest.case.FunctionTestCase (run_test)\ntest_arbitrary_hash_without_materialized_receipt_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_caller_metadata_cannot_overwrite_gate_assertions ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_pinned_key_with_fake_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_public_metadata_with_attacker_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_evaluator_hash_mismatch_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_finite_inputs_that_overflow_delta_quarantine ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_frozen_benchmark_passes ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_independent_verifier_imports_no_package ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_infinite_receiver_time_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_existing_decision_chain_fails_closed_and_is_not_extended ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_frozen_policy_hash_fails_constructor ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_proposal_id_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_receipt_tamper_is_detected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_store_required_when_policy_requires_it ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_relation_history_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nan_candidate_score_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_negative_critical_failure_count_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonboolean_evaluation_complete_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonpromote_never_emits_actionable_promotion_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_policy_rejects_public_key_fingerprint_mismatch ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_document_has_exact_claim_not_locator_hash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_replayed_appraisal_for_other_successor_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_reused_signature_cannot_cover_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_same_receipt_hash_cannot_launder_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_source_version_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_successor_cannot_be_its_own_evaluator ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_critical_failure_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_heldout_regression_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unhashable_change_summary_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unserializable_caller_metadata_is_dropped_not_crashing_gate ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unsigned_content_addressed_appraisal_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_valid_successor_promotes_and_emits_exact_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_heldout_set_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_policy_hash_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack4_same_guardian_two_receipts_not_quorum ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack5_guardian_approval_replay_rejected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_benchmark_owner_cannot_be_mutating_agent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_good_mutation_commits ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_health_drift_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_heldout_regression_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_json_invalid_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_fitness_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_grader_gets_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_or_empty_receipts_fail_closed ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_proposer_cannot_be_guardian ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_can_commit_with_valid_bound_distinct_guardian_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_requires_valid_guardian_quorum_not_fake_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_without_guardian_chain_does_not_accept_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_does_not_store_raw_mutation_payload ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_evaluator_detected_by_derived_identity_even_if_flag_lies ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_reported_evaluator_boolean_true_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unknown_component_defaults_to_protected ... ok\n\n----------------------------------------------------------------------\nRan 54 tests in 0.148s\n\nOK\n",
+      "stderr": "unittest.case.FunctionTestCase (run_test)\ntest_arbitrary_hash_without_materialized_receipt_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_caller_metadata_cannot_overwrite_gate_assertions ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_pinned_key_with_fake_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_public_metadata_with_attacker_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_evaluator_hash_mismatch_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_finite_inputs_that_overflow_delta_quarantine ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_frozen_benchmark_passes ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_independent_verifier_imports_no_package ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_infinite_receiver_time_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_existing_decision_chain_fails_closed_and_is_not_extended ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_frozen_policy_hash_fails_constructor ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_proposal_id_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_receipt_tamper_is_detected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_store_required_when_policy_requires_it ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_relation_history_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nan_candidate_score_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_negative_critical_failure_count_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonboolean_evaluation_complete_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonpromote_never_emits_actionable_promotion_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_policy_rejects_public_key_fingerprint_mismatch ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_document_has_exact_claim_not_locator_hash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_replayed_appraisal_for_other_successor_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_reused_signature_cannot_cover_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_same_receipt_hash_cannot_launder_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_source_version_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_successor_cannot_be_its_own_evaluator ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_critical_failure_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_heldout_regression_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unhashable_change_summary_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unserializable_caller_metadata_is_dropped_not_crashing_gate ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unsigned_content_addressed_appraisal_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_valid_successor_promotes_and_emits_exact_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_heldout_set_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_policy_hash_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack4_same_guardian_two_receipts_not_quorum ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack5_guardian_approval_replay_rejected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_benchmark_owner_cannot_be_mutating_agent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_good_mutation_commits ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_health_drift_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_heldout_regression_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_json_invalid_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_fitness_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_grader_gets_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_or_empty_receipts_fail_closed ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_proposer_cannot_be_guardian ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_can_commit_with_valid_bound_distinct_guardian_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_requires_valid_guardian_quorum_not_fake_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_without_guardian_chain_does_not_accept_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_does_not_store_raw_mutation_payload ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_evaluator_detected_by_derived_identity_even_if_flag_lies ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_reported_evaluator_boolean_true_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unknown_component_defaults_to_protected ... ok\n\n----------------------------------------------------------------------\nRan 54 tests in 0.136s\n\nOK\n",
       "stdout": ""
     },
     {
@@ -71,7 +71,7 @@
     {
       "cmd": [
         "/opt/pyvenv/bin/python",
-        "/mnt/data/swarm_gate_rc3_work/benchmarks/successor-promotion/verify_independent.py"
+        "/mnt/data/swarm_gate_rc3_ci/benchmarks/successor-promotion/verify_independent.py"
       ],
       "name": "independent_verifier",
       "passed": true,
@@ -82,7 +82,7 @@
     {
       "cmd": [
         "/opt/pyvenv/bin/python",
-        "/mnt/data/swarm_gate_rc3_work/scripts/hostile_successor_probe.py"
+        "/mnt/data/swarm_gate_rc3_ci/scripts/hostile_successor_probe.py"
       ],
       "name": "hostile_successor_probe",
       "passed": true,
@@ -93,7 +93,7 @@
     {
       "cmd": [
         "/opt/pyvenv/bin/python",
-        "/mnt/data/swarm_gate_rc3_work/scripts/adversarial_signature_probe.py"
+        "/mnt/data/swarm_gate_rc3_ci/scripts/adversarial_signature_probe.py"
       ],
       "name": "adversarial_signature_probe",
       "passed": true,
@@ -125,12 +125,12 @@
         "-m",
         "pip",
         "wheel",
-        "/tmp/swarm-gate-wheel-ga0qyfg3/src",
+        "/tmp/swarm-gate-wheel-0q4yhz_5/src",
         "--no-deps",
         "--no-build-isolation",
         "-q",
         "-w",
-        "/tmp/swarm-gate-wheel-ga0qyfg3/wheels"
+        "/tmp/swarm-gate-wheel-0q4yhz_5/wheels"
       ],
       "name": "wheel_build",
       "passed": true,
@@ -153,7 +153,7 @@
         "-m",
         "venv",
         "--system-site-packages",
-        "/tmp/swarm-gate-wheel-ga0qyfg3/venv"
+        "/tmp/swarm-gate-wheel-0q4yhz_5/venv"
       ],
       "name": "create_clean_venv",
       "passed": true,
@@ -163,11 +163,11 @@
     },
     {
       "cmd": [
-        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/python",
+        "/tmp/swarm-gate-wheel-0q4yhz_5/venv/bin/python",
         "-m",
         "pip",
         "install",
-        "/tmp/swarm-gate-wheel-ga0qyfg3/wheels/openline_swarm_improvement_gate-0.2.0rc3-py3-none-any.whl",
+        "/tmp/swarm-gate-wheel-0q4yhz_5/wheels/openline_swarm_improvement_gate-0.2.0rc3-py3-none-any.whl",
         "--no-deps",
         "-q"
       ],
@@ -179,7 +179,7 @@
     },
     {
       "cmd": [
-        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/python",
+        "/tmp/swarm-gate-wheel-0q4yhz_5/venv/bin/python",
         "-c",
         "import cryptography, olp_swarm_gate; assert olp_swarm_gate.__version__ == '0.2.0rc3'; print('ok', cryptography.__version__)"
       ],
@@ -191,7 +191,7 @@
     },
     {
       "cmd": [
-        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/olp-swarm-gate",
+        "/tmp/swarm-gate-wheel-0q4yhz_5/venv/bin/olp-swarm-gate",
         "successor-benchmark"
       ],
       "name": "installed_cli_successor_benchmark",
