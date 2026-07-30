@@ -36,7 +36,6 @@ class GatePolicy:
     require_heldout: bool = True
     protected_quorum_required: int = 2
     guardian_receipt_path: Optional[str] = None
-    # Default-deny: only known ordinary components can avoid protected quorum.
     known_ordinary_components: tuple[str, ...] = (
         "summarizer_prompt", "retriever_prompt", "response_style_prompt", "tool_prompt", "ranking_prompt",
     )
@@ -52,23 +51,13 @@ class SwarmImprovementGate:
     def __init__(self, policy: Optional[GatePolicy] = None):
         self.policy = policy or GatePolicy()
 
-    def evaluate(
-        self,
-        *,
-        proposal: MutationProposal,
-        fitness: Optional[FitnessReport],
-        health: Optional[HealthReport],
-        guardian_receipts: Optional[List[str]] = None,
-        metadata: Optional[Dict[str, Any]] = None,
-    ) -> Dict[str, Any]:
+    def evaluate(self, *, proposal: MutationProposal, fitness: Optional[FitnessReport], health: Optional[HealthReport], guardian_receipts: Optional[List[str]] = None, metadata: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         flags: List[str] = []
         guardian_receipts = guardian_receipts or []
         metadata = metadata or {}
         proposal_hash = hash_any(proposal.to_public_dict())
-
         if proposal.old_behavior_hash == proposal.new_behavior_hash:
             flags.append("no_behavior_delta")
-
         if fitness is None:
             flags.append("missing_fitness_report")
         else:
@@ -95,7 +84,6 @@ class SwarmImprovementGate:
                     flags.append("missing_heldout_metric")
                 elif (fitness.heldout_metric_after - fitness.heldout_metric_before) < self.policy.min_heldout_delta:
                     flags.append("heldout_delta_regressed")
-
         if health is None:
             flags.append("missing_health_report")
         else:
@@ -107,25 +95,18 @@ class SwarmImprovementGate:
                 flags.append("health_kappa_too_high")
             if health.delta_hol > self.policy.max_health_delta_hol:
                 flags.append("health_drift_too_high")
-
         protected, protected_reasons = self._touches_protected_component(proposal)
-        valid_guardian_hashes, valid_guardian_ids, guardian_errors = self._valid_guardian_receipts(
-            set(guardian_receipts),
-            proposal=proposal,
-            proposal_hash=proposal_hash,
-        )
+        valid_guardian_hashes, valid_guardian_ids, guardian_errors = self._valid_guardian_receipts(set(guardian_receipts), proposal=proposal, proposal_hash=proposal_hash)
         if guardian_errors:
             flags.extend(guardian_errors)
         if protected and len(valid_guardian_ids) < self.policy.protected_quorum_required:
             flags.append("protected_component_requires_distinct_bound_guardian_quorum")
-
         if fitness is None or health is None or any(flag.startswith("missing_") for flag in flags):
             decision = ImprovementDecision.NO_BADGE.value
         elif flags:
             decision = ImprovementDecision.QUARANTINE.value
         else:
             decision = ImprovementDecision.COMMIT.value
-
         exit_path = self._exit_path(decision, flags, protected)
         body = {
             "receipt_type": "swarm_improvement_decision",
@@ -152,17 +133,7 @@ class SwarmImprovementGate:
             "guardian_quorum_required": self.policy.protected_quorum_required if protected else 0,
             "exit_path": exit_path,
             "next_use_note": self._next_use_note(decision),
-            "metadata": {
-                "proposal": proposal.to_public_dict(),
-                "fitness_summary": fitness.to_public_dict() if fitness else None,
-                "health_summary": health.to_public_dict() if health else None,
-                "raw_mutation_payload_stored": False,
-                "trust_boundary_note": (
-                    "Evaluator independence is derived from IDs. Guardian quorum requires distinct guardian_id values "
-                    "from a valid guardian chain, bound to this mutation_id and proposal_hash."
-                ),
-                **metadata,
-            },
+            "metadata": {"proposal": proposal.to_public_dict(), "fitness_summary": fitness.to_public_dict() if fitness else None, "health_summary": health.to_public_dict() if health else None, "raw_mutation_payload_stored": False, "trust_boundary_note": "Evaluator independence is derived from IDs. Guardian quorum requires distinct guardian_id values from a valid guardian chain, bound to this mutation_id and proposal_hash.", **metadata},
         }
         return append_receipt(self.policy.receipt_path, body)
 
@@ -176,7 +147,6 @@ class SwarmImprovementGate:
         target = str(proposal.target_component).strip().lower()
         haystack = f"{proposal.target_component} {proposal.mutation_type} {proposal.claim} {proposal.change_summary}".lower()
         reasons: List[str] = []
-
         if target not in {c.lower() for c in self.policy.known_ordinary_components}:
             reasons.append("target_component_not_in_ordinary_allowlist")
         for k in sorted(PROTECTED_COMPONENT_KEYWORDS):
@@ -187,56 +157,37 @@ class SwarmImprovementGate:
                 reasons.append(f"control_phrase:{phrase}")
         return bool(reasons), reasons
 
-    def _valid_guardian_receipts(
-        self,
-        guardian_hashes: Set[str],
-        *,
-        proposal: MutationProposal,
-        proposal_hash: str,
-    ) -> Tuple[Set[str], Set[str], List[str]]:
-        """Validate guardian approvals for this exact mutation.
-
-        A valid quorum means distinct guardian_id values, not merely distinct receipt hashes.
-        Each guardian receipt must bind to this mutation_id and proposal_hash.
-        """
+    def _valid_guardian_receipts(self, guardian_hashes: Set[str], *, proposal: MutationProposal, proposal_hash: str) -> Tuple[Set[str], Set[str], List[str]]:
         if not guardian_hashes:
             return set(), set(), []
         if self.policy.guardian_receipt_path is None:
             return set(), set(), ["guardian_receipts_unverifiable_no_chain"]
-
         chain = verify_chain(self.policy.guardian_receipt_path)
         if not chain["valid"]:
             return set(), set(), ["guardian_receipt_chain_invalid"]
-
         valid_hashes: Set[str] = set()
         valid_guardian_ids: Set[str] = set()
         errors: List[str] = []
         available = {r.get("receipt_hash"): r for r in load_receipts(self.policy.guardian_receipt_path)}
-
         for h in guardian_hashes:
             rec = available.get(h)
             if rec is None:
                 errors.append("guardian_receipt_hash_not_found")
                 continue
-
             guardian_id = rec.get("guardian_id")
             if not guardian_id:
                 errors.append("guardian_receipt_missing_guardian_id")
                 continue
-
             if self.policy.forbid_proposer_as_guardian and self._same_actor(str(guardian_id), proposal.proposer):
                 errors.append("guardian_is_mutating_agent")
                 continue
-
             if rec.get("receipt_type") != "guardian_approval":
                 errors.append("guardian_receipt_wrong_type")
                 continue
-
             approved_status = rec.get("decision") == "COMMIT" or rec.get("status") in {"approved", "committed"}
             if not approved_status:
                 errors.append("guardian_receipt_not_approved")
                 continue
-
             if self.policy.require_guardian_binding:
                 if rec.get("approves_mutation_id") != proposal.mutation_id:
                     errors.append("guardian_receipt_wrong_mutation_binding")
@@ -244,17 +195,13 @@ class SwarmImprovementGate:
                 if rec.get("approves_proposal_hash") != proposal_hash:
                     errors.append("guardian_receipt_proposal_hash_mismatch")
                     continue
-
             norm_id = self._normalize_actor(str(guardian_id))
             if norm_id in valid_guardian_ids and self.policy.require_distinct_guardians:
                 errors.append("guardian_quorum_not_distinct")
-                # Keep the hash as valid evidence, but it does not increase distinct quorum.
                 valid_hashes.add(h)
                 continue
-
             valid_hashes.add(h)
             valid_guardian_ids.add(norm_id)
-
         return valid_hashes, valid_guardian_ids, sorted(set(errors))
 
     def _status_for_decision(self, decision: str) -> str:
@@ -287,8 +234,4 @@ class SwarmImprovementGate:
             allowed.append("issue_guardian_approvals_bound_to_current_proposal")
         if "guardian_quorum_not_distinct" in flags:
             allowed.append("collect_approval_from_distinct_guardians")
-        return {
-            "mode": "quarantine_resolution_required" if decision == "QUARANTINE" else "proof_completion_required",
-            "allowed_resolutions": allowed,
-            "blocking_flags": flags,
-        }
+        return {"mode": "quarantine_resolution_required" if decision == "QUARANTINE" else "proof_completion_required", "allowed_resolutions": allowed, "blocking_flags": flags}

@@ -1,59 +1,13 @@
-# Claim Boundary
+# Claim Boundary — v0.2.0rc3
 
-## Supported claim
+This release demonstrates a receiver-owned successor-promotion mechanism on frozen synthetic fixtures.
 
-OpenLine Swarm Improvement Gate v0.1.3 shows a toy pattern for gating self-improvement in agent swarms:
+For the bundled profile, `PROMOTE` requires the exact appraisal artifact to be materialized, content-addressed, and signed with Ed25519 by the evaluator public key pinned in receiver policy. The signature covers the full witness and appraisal body, including source/successor version hashes, scores, failure count, evidence status, policy pins, relation history, and timestamp. Copied evaluator metadata is not sufficient.
 
-```text
-reflect → propose mutation → independent eval → held-out check → health check → distinct bound guardian quorum if protected → commit/quarantine/no-badge → receipt
-```
+The gate also checks the pinned key fingerprint, benchmark/policy bindings, freshness, held-out thresholds, and destination decision-chain integrity. Only `PROMOTE` emits an exact promotion intent; execution remains owned by Receipt Gate / Verified Commit.
 
-It emits local hash-chained receipts for mutation decisions.
+The cryptographic boundary is key possession, not sociology. A valid signature establishes that the holder of the receiver-pinned private key signed the appraisal. It does not prove that the key holder is organizationally independent of the successor. If the successor controls the evaluator private key, receiver policy, or receiver evidence store, the deployment has violated the independence assumption.
 
-## Not claimed
+The benchmark signing key is a deterministic public test fixture and is intentionally recoverable from the repository tests/probes. The bundled frozen profile therefore must never be reused as a production trust policy; production receivers must provision a different evaluator key under receiver-controlled custody.
 
-This repo does not claim:
-
-- full AI alignment;
-- safe recursive self-improvement;
-- universal swarm governance;
-- production-grade access control;
-- public-key signatures;
-- impossible-to-game evals.
-
-It is a small developer primitive.
-
-## Honest public claim
-
-This shows what self-improvement trails should preserve.
-
-A swarm should not be allowed to mutate itself without receipts.
-
-
-## Guardian quorum boundary
-
-The current guardian quorum is **not** a cryptographic identity system.
-
-It checks that guardian receipts are:
-
-```text
-present in a valid guardian receipt chain
-committed
-distinct by guardian_id label
-bound to the exact mutation_id
-bound to the exact proposal_hash
-```
-
-That is useful for local demos and receipt-shape testing.
-
-It does not prove that two independent real-world guardians approved the mutation. A proposer with write access to the guardian chain can still create two distinct-looking guardian labels.
-
-Do not claim:
-
-> This proves independent guardian approval.
-
-Do claim:
-
-> This prototype enforces distinct, mutation-bound guardian receipt labels inside a local hash chain.
-
-Production-grade guardian approval requires public-key signatures, a trusted public-key registry, and storage the proposer cannot rewrite unilaterally.
+This release does not establish live recursive self-improvement, general predictive validity, model alignment, safe autonomous deployment, or universal evaluator independence.

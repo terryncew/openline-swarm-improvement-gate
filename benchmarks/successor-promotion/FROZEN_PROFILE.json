@@ -1,0 +1,22 @@
+{
+  "expected_benchmark_id": "successor-promotion",
+  "expected_benchmark_owner": "receiver",
+  "expected_benchmark_version": "v1",
+  "expected_evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+  "expected_evaluator_id": "openline-eval-airlock",
+  "expected_evaluator_public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+  "expected_heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+  "expected_policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+  "frozen_at": 1799990000.0,
+  "frozen_before_outcomes": true,
+  "max_appraisal_age_seconds": 3600.0,
+  "max_critical_failures": 0,
+  "min_candidate_score": 0.75,
+  "min_heldout_delta": 0.01,
+  "profile_id": "successor-promotion-v2-signed-appraisal",
+  "require_external_appraisal_receipt": true,
+  "require_materialized_appraisal_receipt": true,
+  "require_relation_history": true,
+  "require_signed_appraisal_receipt": true,
+  "schema": "openline.swarm_improvement_gate.successor_promotion_profile.v0.3"
+}

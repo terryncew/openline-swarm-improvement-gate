@@ -1,0 +1,1782 @@
+{
+  "cases": [
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "legitimate_successor",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "PROMOTE",
+      "expected_quarantine_flags": [],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "successor_self_evaluates",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "successor_proposer_is_evaluator"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "openline-eval-airlock",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "cfcb792b7dd77cbe5e38d0210ba1a264afa60cac29881daf2e1e1a5b6cc934b4",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "520a3e0a0c7856f70722fec45cf361a2a0433f3f72e96a930f01e35d16f51cb1",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "520a3e0a0c7856f70722fec45cf361a2a0433f3f72e96a930f01e35d16f51cb1",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "57cd94f63d62b162988daa36940d767b69f25a33f8d68491dc02ca6b9f79a65a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "4df2ddfc9ffa199f44d4938bfbd1785997c1df3d2616559ffb3c67d0098adf73b1239ae92bae042f2321586a40b3145829564719a31d272ea413e5e387305707"
+        },
+        "witness": {
+          "evaluator_hash": "520a3e0a0c7856f70722fec45cf361a2a0433f3f72e96a930f01e35d16f51cb1",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "evaluator_hash_not_frozen",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "evaluator_hash_not_frozen"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "4acb467cd6c51f842ac844a0614c97f8b24c8daaa9233746b081be35f4868509",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "5d488db4ba97d9b7b5765165d872f5cb0f0c84b170f8f4fc04aa08e356ab1dd4",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "5d488db4ba97d9b7b5765165d872f5cb0f0c84b170f8f4fc04aa08e356ab1dd4",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "04aaa148c8e62be76effe3b973a16f40b24c48e8b4983a3754b6f73ce0ef65d3",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "5aa214b158ae42319185239bbb627a16b874ef3b2fdd47f2cc6312f2b04f213b44d58114578090b7efd93016540b164f2799b91edc332ffd38ff409df8d24508"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "heldout_set_not_frozen",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "heldout_set_not_frozen"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "7171ae992c0555372e691cc0ce1c23940428a46090fc673bbc56ef268b436b2a",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "b6fdbad09852cba35521a3384f303e99819b9f36aecdf66016859a9aa21793b0",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "b6fdbad09852cba35521a3384f303e99819b9f36aecdf66016859a9aa21793b0",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "9cc40fbb16e8be334047b94eb91dd6ccd47c992d9bd1b1bcf0615c020075104f",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "dccc3f86c5bcd5eff19e89c8a3df5596a081c318b38480ccc596e59234f4258a6e36e0b608442467678041020dd34a9677218d17614297483eaba0457e0f400e"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "appraisal_policy_not_frozen",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_policy_not_frozen"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "4b718cb60752cbcc3d0b786ea02020b6b4c427b14e3aba51fb86754e3aaa208f",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "3ecae45161eff44b80aa053e42b3b2db7786f9e99cd4747292adca88b10a30c8"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "3ecae45161eff44b80aa053e42b3b2db7786f9e99cd4747292adca88b10a30c8"
+        },
+        "payload_hash": "573835a94ebfa4b6344779763ba1503ed5c07f1a56b1a5ea9c14ced328fc1114",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "4d48e834e86045dba0db2e394db1709ed69852264b42868a1d96f34fdc7a76dc54693feb9b0b28cb388404ebe8217d802ac1b90db5fef56e14846e5623fb760b"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "replayed_appraisal_wrong_successor",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_wrong_successor_version"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "797a66af07a2d480710e47617af24e471bdca14189e729ae1779eb21cde23f26",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "fb50a4808196eed99152cfd1a083e07c425cfc5fbd605bf3653794fd3e96906c",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "fb50a4808196eed99152cfd1a083e07c425cfc5fbd605bf3653794fd3e96906c",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "b527387837085e87d9e69b1178812d2579a261f8147a62c234a125a8eaed3dcb",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "b3af2f8478bac0f13de3c5241d65be7a62c215ecf5e379be357e75077c66102ca9ba9c78a66a6a2bde3451df583414b41e5db4ee9ac837ef4aa8bc84427fe90e"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "source_version_not_current",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "source_version_not_current"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "fb50a4808196eed99152cfd1a083e07c425cfc5fbd605bf3653794fd3e96906c",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "777bb57a73cdf18a763e70c2874414e860583bbaeba97e16c6e3be4484ce4961",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799996000.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799996000.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "1da57a02511f2c38e01894d9353440c85ebf69170794ae4acd06d2fe6a4a87bf",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "7e428316d7fefe743ce0c47d4bcae3e81a9d28e56afc9a746f2eec2c61dee0df2a1f8227e59afbacbc90c245020fef8eb011185aa84c24df798bb11cc23d8d0a"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "stale_appraisal",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_stale"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "921141bdc5390a17caedf5956540dfb0bcf99ae0574606b5e78c3c8f040244fc",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "e9fb8b6fcf1e548913942dd2dd6986bf01c4c1c4d51ab18a8cdef00c0276f3cb",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "b70ac3c6f305f7119d88f78fd64f49239dc54aba9cd0827b37658dd07597bfa23d895766d770f0315740f3ba63623347b1e87fe49ca641342e3b71e65aa0b10b"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "missing_relation_history",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "missing_relation_history"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "e0ab715146929bdcdea7df4c033871d6ca135de013984426d9763fe9a4193ebb",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": false,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": false,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "f48817eb36357155747d83091bf1d0d88c115573655cc85237a7cd81c4ef2f5a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "7f8379d5045f112b69e16ee691b6fca800b166f862eead05bc2f259711f9e24f6a45890e3637b551b4a1ed654b8074ce31b580acefaee963f7638264aedfb30d"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "incomplete_evaluation",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "evaluation_incomplete"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "9934d749c7825237b84d31c07d7ef586ec4bca0b2ac681f9b222089f54c569af",
+        "baseline_score": 0.8,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.795,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.8,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.795,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "6e9fb41cf3240502b9003290503637d7766b4bd1a11b84f2a3ba061752d26d04",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "6b21c11dd7721e9e3a49f0885ece83d8ce273e17464d66aa0068137763a7b5c769c8baf4bf58a5c2567992424656366dc9752dbf200c61550ea81ed72d806709"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "heldout_regression",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "REJECT",
+      "expected_quarantine_flags": [],
+      "expected_reject_flags": [
+        "heldout_delta_regressed"
+      ],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "ad2b7aa8642d0f50755ccc511cc2e8e3e78a62a96c371d20159b21b15a22e513",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 1,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 1,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "5b1e9632acb08198251667e092e6c20522d82bb28c583cf8064364ee186ca8d2",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "f85affc8ea3dcc1df3e8dea10a7418c6c0e5e1ad855423dba77e28a3b907bea119175194a1bcdb1b40154326c14fafadac18cd79654dcde33d70de3e04798b07"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "critical_failure",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "REJECT",
+      "expected_quarantine_flags": [],
+      "expected_reject_flags": [
+        "critical_failure_detected"
+      ],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "e0a353fd4c01e9e6cc97478b278b4d43c98a15d72d19ced6662337d9c05485e5",
+        "baseline_score": 0.6,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.7,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.6,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.7,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "c3c5baaf7b62c8974cb6c415ad3fe5da05d27c2a99c500218cea68908fd161c5",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "37673711e7a1c8a39cc79718ff7ff7093fcfa98ba463e1d8e5dcd6e0977e1bbbac1cd41b5eebfb6dea611c92f3ce877bb1109f61103951cf70d351ffb2393f06"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "candidate_below_floor",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "REJECT",
+      "expected_quarantine_flags": [],
+      "expected_reject_flags": [
+        "candidate_score_below_floor"
+      ],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "66e07a118ca5e635a3f40d222302c55680cffc576c93bd04e7cee4674035efd7",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017"
+        },
+        "payload_hash": "41ecbabd02ee64530bc45708c983ad9047e9f9f43a11469e08233feabcf66c1d",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "8c2e27e73543de31d13b07eaefc1135a7b0a4fe86a3fc6c2e35845f2d350b31dc14e25aa7b7d67c671ca39199ae8e82b919430f0eb08c946f9a3d5a0ac6a8101"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "no_version_delta",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "successor_has_no_version_delta"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "d23c2c6abad5329b898ddb8598542bbf3d9fc2c1d7c9e27a93ec73dd58d0fb65",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "version-A-agent",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "version-A-agent",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "bd753315db699b463c39cf1dd2a45301e26b192ba1c0245dda225a596e7fd584",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "50cf93f0396a1c68fd31f7346cb7e24d4f879e110af21eb553667707312b2e8703eeb4e9b1ccd52b0a1e6b664934bbb11edbc9ca0541b325f9dfd014364e5602"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "proposer_owns_benchmark",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "benchmark_owner_not_frozen",
+        "successor_proposer_owns_benchmark"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "case_id": "missing_appraisal_receipt",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "missing_or_invalid_appraisal_receipt"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "384f99c653be09de49cd55cd3c21386614386fe72c80ab23cf7be52779ca95a1",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "case_id": "forged_hash_without_artifact",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_receipt_not_found"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.99,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "appraisal_payload_tampered_after_receipt",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_receipt_payload_mismatch"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.81,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "materialized_receipt_tampered",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_receipt_hash_mismatch"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "invalid_destination_chain",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "invalid_destination_receipt_chain"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "preexisting_decision_chain": "{not-json\n",
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "3d7b939ff3a81ade7cbbd208b03ae4ee427cd9697db4b282e624663669168b84",
+        "baseline_score": -1e+308,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 1e+308,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": -1e+308,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 1e+308,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "6014277467c22c2613b044fdb71e0e3f9157e7b9f2e3cb5da6863af845e4151a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "c5041021a10b1aeab853f3bcec4e2f70e49c66c40d23d76ba035b234a8e74183688ae2f880aaf3b49c1b84f55f7522bf6807d3c8643eb6be421377eb192f0200"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "nonfinite_derived_delta",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "nonfinite_heldout_delta"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.82,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.82,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "4c3dfd0689b9db5e034b4854b3ac93289f4f473a8c44f4a9762e9e0442975abd",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "malformed_proposal_id_type",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "invalid_proposal_id"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": null,
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "7b26caaa0d529a89ab4d0ccc887e420e896feef1887f7fda8f71a6ab80b20e04",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.99,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.99,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "470c118ee82e578cbe689a0625ea6a4488b46bc39f57327382623687b14f0c2a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "copied_evaluator_metadata_unsigned",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_signature_missing"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "5ddb682cb6e0b2bb28f2051cb888410187002cc0c1cc862a070dbc294dd1166b",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.99,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.99,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "470c118ee82e578cbe689a0625ea6a4488b46bc39f57327382623687b14f0c2a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "c6d0c796bb4c3c923615f8dc85e6fc35149eb6b1317de523d3a5085584f5c109",
+          "value": "f4b4d174106ae8995000eca704b2279ed8f5096b2c55b81ccab93b218bb3947dd388fb0d56ce154cb18d79f969e8765cbadc15368fe56cf177f3909b78f6b901"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "copied_evaluator_metadata_attacker_signed",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_signer_not_pinned"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "08ec3adf6e90bd6f6da42a44f44875267218f32ae42d53f329afe02996c58975",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.99,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.99,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "470c118ee82e578cbe689a0625ea6a4488b46bc39f57327382623687b14f0c2a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "copied_pinned_key_fake_signature",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_signature_invalid"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    },
+    {
+      "appraisal": {
+        "appraisal_receipt_hash": "17c3020306a64efb30690aee269c30351437970c7296e3ecd6f238a4819de073",
+        "baseline_score": 0.72,
+        "benchmark_id": "successor-promotion",
+        "benchmark_owner": "receiver",
+        "benchmark_version": "v1",
+        "candidate_score": 0.99,
+        "critical_failures": 0,
+        "evaluation_complete": true,
+        "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+        "evaluator_id": "openline-eval-airlock",
+        "evidence_status": "SUPPORTED",
+        "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+        "issued_at": 1799999500.0,
+        "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+        "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "appraisal_receipt_document": {
+        "appraisal": {
+          "baseline_score": 0.72,
+          "benchmark_id": "successor-promotion",
+          "benchmark_owner": "receiver",
+          "benchmark_version": "v1",
+          "candidate_score": 0.99,
+          "critical_failures": 0,
+          "evaluation_complete": true,
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock",
+          "evidence_status": "SUPPORTED",
+          "heldout_set_hash": "4be778f610663bf25fd854f0d71629e963e5eefa463622aaea3cc5c5f2c2ae3b",
+          "issued_at": 1799999500.0,
+          "policy_hash": "9d7395ce359464a1b20de6d33e23ebe94ae303bfa55817e954fb32f1d515181c",
+          "relation_history_hash": "3de52376e860b2f084a67d6e4df14d82a758babad7dee5734a94cbdac1c00012",
+          "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+          "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+        },
+        "payload_hash": "470c118ee82e578cbe689a0625ea6a4488b46bc39f57327382623687b14f0c2a",
+        "receipt_type": "eval_airlock_appraisal",
+        "schema": "openline.eval_airlock.appraisal_receipt.v0.3",
+        "signature": {
+          "algorithm": "Ed25519",
+          "public_key": "8ca63145907a2e6c5fb3dc0791c0189b8252da3e4143704b3b2ca4e526f25dd1",
+          "value": "e7d0bb9ee01a9dc90f3de9bc36f5fe16d7b3797e6a9584eccfda42088daeac09684894f96ac0e2a6b7eb54bbdf8391686cacfb62ea1b8f0455cf03a34866db0c"
+        },
+        "witness": {
+          "evaluator_hash": "9cf036f25b27a49c9b794dc01e750deca8fc12a3ee61aeced7746dba8d730180",
+          "evaluator_id": "openline-eval-airlock"
+        }
+      },
+      "case_id": "reused_signature_after_score_swap",
+      "current_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+      "expected_decision": "QUARANTINE",
+      "expected_quarantine_flags": [
+        "appraisal_signature_invalid"
+      ],
+      "expected_reject_flags": [],
+      "now": 1800000000.0,
+      "proposal": {
+        "change_summary": "Successor B claims improved held-out reliability.",
+        "created_at": 1799999000.0,
+        "proposal_id": "promotion-001",
+        "proposer_id": "version-A-agent",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "source_version_id": "A",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340",
+        "successor_version_id": "B"
+      }
+    }
+  ],
+  "schema": "openline.swarm_improvement_gate.successor_cases.v0.3"
+}

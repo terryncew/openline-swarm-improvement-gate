@@ -1,0 +1,284 @@
+{
+  "all_cases_match_expected": true,
+  "case_count": 26,
+  "cases": [
+    {
+      "case_id": "legitimate_successor",
+      "decision": "PROMOTE",
+      "matches_expected": true,
+      "promotion_intent": {
+        "action": "promote_successor_version",
+        "appraisal_receipt_hash": "1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5",
+        "enforcement": "NOT_EXECUTED_BY_SWARM_IMPROVEMENT_GATE",
+        "frozen_policy_hash": "3c6d0663679324693f2872ed11fb86b4788efaa4995e322e22346456c89df825",
+        "next_enforcer": "openline-receipt-gate/verified-commit",
+        "proposal_id": "promotion-001",
+        "source_version_hash": "99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017",
+        "successor_version_hash": "69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340"
+      },
+      "quarantine_flags": [],
+      "reject_flags": []
+    },
+    {
+      "case_id": "successor_self_evaluates",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "successor_proposer_is_evaluator"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "evaluator_hash_not_frozen",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "evaluator_hash_not_frozen"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "heldout_set_not_frozen",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "heldout_set_not_frozen"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "appraisal_policy_not_frozen",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_policy_not_frozen"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "replayed_appraisal_wrong_successor",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_wrong_successor_version"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "source_version_not_current",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "source_version_not_current"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "stale_appraisal",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_stale"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "missing_relation_history",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "missing_relation_history"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "incomplete_evaluation",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "evaluation_incomplete"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "heldout_regression",
+      "decision": "REJECT",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [],
+      "reject_flags": [
+        "heldout_delta_regressed"
+      ]
+    },
+    {
+      "case_id": "critical_failure",
+      "decision": "REJECT",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [],
+      "reject_flags": [
+        "critical_failure_detected"
+      ]
+    },
+    {
+      "case_id": "candidate_below_floor",
+      "decision": "REJECT",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [],
+      "reject_flags": [
+        "candidate_score_below_floor"
+      ]
+    },
+    {
+      "case_id": "no_version_delta",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "successor_has_no_version_delta"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "proposer_owns_benchmark",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "benchmark_owner_not_frozen",
+        "successor_proposer_owns_benchmark"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "missing_appraisal_receipt",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "missing_or_invalid_appraisal_receipt"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "forged_hash_without_artifact",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_receipt_not_found"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "appraisal_payload_tampered_after_receipt",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_receipt_payload_mismatch"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "materialized_receipt_tampered",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_receipt_hash_mismatch"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "invalid_destination_chain",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "invalid_destination_receipt_chain"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "nonfinite_derived_delta",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "nonfinite_heldout_delta"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "malformed_proposal_id_type",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "invalid_proposal_id"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "copied_evaluator_metadata_unsigned",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_signature_missing"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "copied_evaluator_metadata_attacker_signed",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_signer_not_pinned"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "copied_pinned_key_fake_signature",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_signature_invalid"
+      ],
+      "reject_flags": []
+    },
+    {
+      "case_id": "reused_signature_after_score_swap",
+      "decision": "QUARANTINE",
+      "matches_expected": true,
+      "promotion_intent": null,
+      "quarantine_flags": [
+        "appraisal_signature_invalid"
+      ],
+      "reject_flags": []
+    }
+  ],
+  "claim_boundary": "Synthetic frozen fixtures validate receiver-owned successor-promotion mechanics, including receiver-pinned Ed25519 appraisal provenance, materialized content binding, and fail-closed decision history. They do not establish live recursive self-improvement performance or that possession of the pinned evaluator private key is operationally independent of the successor.",
+  "decision_counts": {
+    "PROMOTE": 1,
+    "QUARANTINE": 22,
+    "REJECT": 3
+  },
+  "frozen_before_outcomes": true,
+  "passed": true,
+  "profile_id": "successor-promotion-v2-signed-appraisal",
+  "schema": "openline.swarm_improvement_gate.successor_benchmark_report.v0.3"
+}

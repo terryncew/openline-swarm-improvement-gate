@@ -1,15 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "openline-swarm-improvement-gate"
-version = "0.1.3"
-description = "A tiny mutation gate for self-improving agent swarms."
+version = "0.2.0rc3"
+description = "A receiver-owned mutation and successor-promotion gate for self-improving agents."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Terrynce White"}]
+dependencies = ["cryptography>=42"]
 
 [project.scripts]
 olp-swarm-gate = "olp_swarm_gate.cli:main"
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["."]
+[tool.setuptools.packages.find]
+include = ["olp_swarm_gate*"]
+
+[tool.setuptools.package-data]
+olp_swarm_gate = ["data/successor-promotion/*.json"]

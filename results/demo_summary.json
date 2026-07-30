@@ -1,0 +1,259 @@
+{
+  "decisions": {
+    "good": "COMMIT",
+    "missing_grader": "NO_BADGE",
+    "memory_policy": "QUARANTINE",
+    "protected_valid_quorum": "COMMIT"
+  },
+  "summary": {
+    "good": {
+      "badge": {
+        "path": "receipts/good_commit.jsonl",
+        "badge": "PASS",
+        "review_required": false,
+        "reason": "all proposed improvements committed with required proof",
+        "counts": {
+          "COMMIT": 1,
+          "QUARANTINE": 0,
+          "NO_BADGE": 0
+        },
+        "chain": {
+          "path": "receipts/good_commit.jsonl",
+          "valid": true,
+          "count": 1,
+          "missing": false,
+          "empty": false,
+          "errors": [],
+          "last_hash": "c2cac9de518db2f85084e2725933a7605e9f6dfba2b5c792e50b32c0ddd28414"
+        }
+      },
+      "review": {
+        "badge": {
+          "path": "receipts/good_commit.jsonl",
+          "badge": "PASS",
+          "review_required": false,
+          "reason": "all proposed improvements committed with required proof",
+          "counts": {
+            "COMMIT": 1,
+            "QUARANTINE": 0,
+            "NO_BADGE": 0
+          },
+          "chain": {
+            "path": "receipts/good_commit.jsonl",
+            "valid": true,
+            "count": 1,
+            "missing": false,
+            "empty": false,
+            "errors": [],
+            "last_hash": "c2cac9de518db2f85084e2725933a7605e9f6dfba2b5c792e50b32c0ddd28414"
+          }
+        },
+        "review_items": []
+      }
+    },
+    "missing_grader": {
+      "badge": {
+        "path": "receipts/missing_grader.jsonl",
+        "badge": "NO_BADGE",
+        "review_required": true,
+        "reason": "one or more proposed improvements lacked enough proof",
+        "counts": {
+          "COMMIT": 0,
+          "QUARANTINE": 0,
+          "NO_BADGE": 1
+        },
+        "chain": {
+          "path": "receipts/missing_grader.jsonl",
+          "valid": true,
+          "count": 1,
+          "missing": false,
+          "empty": false,
+          "errors": [],
+          "last_hash": "f7067b089e9f9eaa7796ddb8dc8d0b3d5d113b67d27ab9a0a033f7576857e028"
+        }
+      },
+      "review": {
+        "badge": {
+          "path": "receipts/missing_grader.jsonl",
+          "badge": "NO_BADGE",
+          "review_required": true,
+          "reason": "one or more proposed improvements lacked enough proof",
+          "counts": {
+            "COMMIT": 0,
+            "QUARANTINE": 0,
+            "NO_BADGE": 1
+          },
+          "chain": {
+            "path": "receipts/missing_grader.jsonl",
+            "valid": true,
+            "count": 1,
+            "missing": false,
+            "empty": false,
+            "errors": [],
+            "last_hash": "f7067b089e9f9eaa7796ddb8dc8d0b3d5d113b67d27ab9a0a033f7576857e028"
+          }
+        },
+        "review_items": [
+          {
+            "receipt_id": "e1f8506f-b779-4fb0-a165-06cb348e5a5f",
+            "mutation_id": "mut_bad_001",
+            "proposer": "agent_b",
+            "decision": "NO_BADGE",
+            "policy_flags": [
+              "evaluator_is_mutating_agent",
+              "benchmark_owner_is_mutating_agent",
+              "benchmark_not_versioned",
+              "missing_grader_receipt",
+              "missing_heldout_set_hash",
+              "missing_heldout_metric",
+              "protected_component_requires_distinct_bound_guardian_quorum"
+            ],
+            "exit_path": {
+              "allowed_resolutions": [
+                "rollback_candidate",
+                "human_review",
+                "independent_retest",
+                "distinct_bound_guardian_quorum_approval",
+                "rerun_with_independent_evaluator_and_benchmark"
+              ],
+              "blocking_flags": [
+                "evaluator_is_mutating_agent",
+                "benchmark_owner_is_mutating_agent",
+                "benchmark_not_versioned",
+                "missing_grader_receipt",
+                "missing_heldout_set_hash",
+                "missing_heldout_metric",
+                "protected_component_requires_distinct_bound_guardian_quorum"
+              ],
+              "mode": "proof_completion_required"
+            },
+            "receipt_hash": "f7067b089e9f9eaa7796ddb8dc8d0b3d5d113b67d27ab9a0a033f7576857e028",
+            "next_use_note": "Do not use this as a certified improvement. Required proof is missing."
+          }
+        ]
+      }
+    },
+    "memory_policy": {
+      "badge": {
+        "path": "receipts/memory_policy_quarantine.jsonl",
+        "badge": "REVIEW",
+        "review_required": true,
+        "reason": "one or more proposed improvements were quarantined",
+        "counts": {
+          "COMMIT": 0,
+          "QUARANTINE": 1,
+          "NO_BADGE": 0
+        },
+        "chain": {
+          "path": "receipts/memory_policy_quarantine.jsonl",
+          "valid": true,
+          "count": 1,
+          "missing": false,
+          "empty": false,
+          "errors": [],
+          "last_hash": "ee57465f41314121a81336b74a8cbf8c7c8bcba9a44b9b2a9452857799e7c58e"
+        }
+      },
+      "review": {
+        "badge": {
+          "path": "receipts/memory_policy_quarantine.jsonl",
+          "badge": "REVIEW",
+          "review_required": true,
+          "reason": "one or more proposed improvements were quarantined",
+          "counts": {
+            "COMMIT": 0,
+            "QUARANTINE": 1,
+            "NO_BADGE": 0
+          },
+          "chain": {
+            "path": "receipts/memory_policy_quarantine.jsonl",
+            "valid": true,
+            "count": 1,
+            "missing": false,
+            "empty": false,
+            "errors": [],
+            "last_hash": "ee57465f41314121a81336b74a8cbf8c7c8bcba9a44b9b2a9452857799e7c58e"
+          }
+        },
+        "review_items": [
+          {
+            "receipt_id": "134053f1-5480-401a-baf6-502511873b27",
+            "mutation_id": "mut_danger_001",
+            "proposer": "agent_c",
+            "decision": "QUARANTINE",
+            "policy_flags": [
+              "heldout_delta_regressed",
+              "health_badge_not_green",
+              "health_drift_too_high",
+              "protected_component_requires_distinct_bound_guardian_quorum"
+            ],
+            "exit_path": {
+              "allowed_resolutions": [
+                "rollback_candidate",
+                "human_review",
+                "independent_retest",
+                "distinct_bound_guardian_quorum_approval",
+                "revise_and_retest_on_new_heldout",
+                "run_health_monitor_again_after_patch"
+              ],
+              "blocking_flags": [
+                "heldout_delta_regressed",
+                "health_badge_not_green",
+                "health_drift_too_high",
+                "protected_component_requires_distinct_bound_guardian_quorum"
+              ],
+              "mode": "quarantine_resolution_required"
+            },
+            "receipt_hash": "ee57465f41314121a81336b74a8cbf8c7c8bcba9a44b9b2a9452857799e7c58e",
+            "next_use_note": "Candidate improvement is contained. Resolve through rollback, human approval, independent re-test, or distinct bound guardian quorum."
+          }
+        ]
+      }
+    },
+    "protected_valid_quorum": {
+      "badge": {
+        "path": "receipts/protected_valid_quorum.jsonl",
+        "badge": "PASS",
+        "review_required": false,
+        "reason": "all proposed improvements committed with required proof",
+        "counts": {
+          "COMMIT": 1,
+          "QUARANTINE": 0,
+          "NO_BADGE": 0
+        },
+        "chain": {
+          "path": "receipts/protected_valid_quorum.jsonl",
+          "valid": true,
+          "count": 1,
+          "missing": false,
+          "empty": false,
+          "errors": [],
+          "last_hash": "bfa115e4aa4f15351623f119732dcab624827a8b919e1b2cb34ae547a83b3c29"
+        }
+      },
+      "review": {
+        "badge": {
+          "path": "receipts/protected_valid_quorum.jsonl",
+          "badge": "PASS",
+          "review_required": false,
+          "reason": "all proposed improvements committed with required proof",
+          "counts": {
+            "COMMIT": 1,
+            "QUARANTINE": 0,
+            "NO_BADGE": 0
+          },
+          "chain": {
+            "path": "receipts/protected_valid_quorum.jsonl",
+            "valid": true,
+            "count": 1,
+            "missing": false,
+            "empty": false,
+            "errors": [],
+            "last_hash": "bfa115e4aa4f15351623f119732dcab624827a8b919e1b2cb34ae547a83b3c29"
+          }
+        },
+        "review_items": []
+      }
+    }
+  }
+}

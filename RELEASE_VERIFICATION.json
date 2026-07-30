@@ -1,0 +1,215 @@
+{
+  "checks": [
+    {
+      "name": "version",
+      "observed": "0.2.0rc3",
+      "passed": true
+    },
+    {
+      "name": "profile_frozen_before_outcomes",
+      "passed": true
+    },
+    {
+      "name": "materialized_appraisal_required",
+      "passed": true
+    },
+    {
+      "name": "signed_appraisal_required",
+      "passed": true
+    },
+    {
+      "name": "evaluator_public_key_pin_matches_fingerprint",
+      "passed": true
+    },
+    {
+      "name": "frozen_case_count",
+      "observed": 26,
+      "passed": true
+    },
+    {
+      "name": "frozen_decision_counts",
+      "observed": {
+        "PROMOTE": 1,
+        "QUARANTINE": 22,
+        "REJECT": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "benchmark_report_passed",
+      "passed": true
+    },
+    {
+      "name": "packaged_benchmark_data_matches_source",
+      "passed": true
+    },
+    {
+      "name": "benchmark_recomputes_exactly",
+      "passed": true
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "name": "stdlib_unittest_suite",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "unittest.case.FunctionTestCase (run_test)\ntest_arbitrary_hash_without_materialized_receipt_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_caller_metadata_cannot_overwrite_gate_assertions ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_pinned_key_with_fake_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_copied_public_metadata_with_attacker_signature_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_evaluator_hash_mismatch_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_finite_inputs_that_overflow_delta_quarantine ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_frozen_benchmark_passes ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_independent_verifier_imports_no_package ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_infinite_receiver_time_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_existing_decision_chain_fails_closed_and_is_not_extended ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_invalid_frozen_policy_hash_fails_constructor ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_proposal_id_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_receipt_tamper_is_detected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_materialized_store_required_when_policy_requires_it ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_relation_history_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nan_candidate_score_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_negative_critical_failure_count_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonboolean_evaluation_complete_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_nonpromote_never_emits_actionable_promotion_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_policy_rejects_public_key_fingerprint_mismatch ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_document_has_exact_claim_not_locator_hash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_replayed_appraisal_for_other_successor_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_reused_signature_cannot_cover_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_same_receipt_hash_cannot_launder_changed_score ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_appraisal_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_stale_source_version_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_successor_cannot_be_its_own_evaluator ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_critical_failure_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_trusted_heldout_regression_rejects ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unhashable_change_summary_fails_closed_without_crash ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unserializable_caller_metadata_is_dropped_not_crashing_gate ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unsigned_content_addressed_appraisal_cannot_promote ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_valid_successor_promotes_and_emits_exact_intent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_heldout_set_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_wrong_policy_hash_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack4_same_guardian_two_receipts_not_quorum ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_attack5_guardian_approval_replay_rejected ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_benchmark_owner_cannot_be_mutating_agent ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_good_mutation_commits ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_health_drift_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_heldout_regression_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_malformed_json_invalid_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_fitness_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_grader_gets_no_badge ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_missing_or_empty_receipts_fail_closed ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_proposer_cannot_be_guardian ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_can_commit_with_valid_bound_distinct_guardian_chain ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_requires_valid_guardian_quorum_not_fake_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_protected_component_without_guardian_chain_does_not_accept_strings ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_receipt_does_not_store_raw_mutation_payload ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_evaluator_detected_by_derived_identity_even_if_flag_lies ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_self_reported_evaluator_boolean_true_quarantines ... ok\nunittest.case.FunctionTestCase (run_test)\ntest_unknown_component_defaults_to_protected ... ok\n\n----------------------------------------------------------------------\nRan 54 tests in 0.148s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "files": [],
+      "name": "no_pytest_runtime_dependency",
+      "passed": true
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/swarm_gate_rc3_work/benchmarks/successor-promotion/verify_independent.py"
+      ],
+      "name": "independent_verifier",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"case_count\": 26,\n  \"cases_sha256\": \"93a695a9eb0d67532cb5fac13861f20c30d020eeed3737d1c21f01cf6fd313ec\",\n  \"cryptographic_verifier\": \"cryptography.Ed25519PublicKey\",\n  \"errors\": [],\n  \"independent_of_olp_swarm_gate_imports\": true,\n  \"profile_sha256\": \"a2763d83b5251882a35c4e07a89f2c96868cbe015298b004281d77372c0cef1e\",\n  \"report_sha256\": \"b88f9cec06e280bc85d35aa7971a0efa6d516f054c5b240559a8af43a09a171b\",\n  \"schema\": \"openline.swarm_improvement_gate.successor_independent_verification.v0.3\",\n  \"valid\": true\n}\n"
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/swarm_gate_rc3_work/scripts/hostile_successor_probe.py"
+      ],
+      "name": "hostile_successor_probe",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"decision_counts\": {\n    \"QUARANTINE\": 264,\n    \"REJECT\": 0\n  },\n  \"passed\": true,\n  \"probe_count\": 264,\n  \"schema\": \"openline.swarm_improvement_gate.hostile_successor_probe.v0.3\",\n  \"unexpected_promotions\": 0\n}\n"
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/swarm_gate_rc3_work/scripts/adversarial_signature_probe.py"
+      ],
+      "name": "adversarial_signature_probe",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"claim\": \"Copied evaluator metadata or tampered appraisal signatures do not satisfy receiver-pinned evaluator provenance.\",\n  \"flag_counts\": {\n    \"appraisal_signature_invalid\": 200,\n    \"appraisal_signature_missing\": 100,\n    \"appraisal_signer_not_pinned\": 200\n  },\n  \"passed\": true,\n  \"probe_count\": 500,\n  \"schema\": \"openline.swarm_improvement_gate.adversarial_signature_probe.v0.3\",\n  \"unexpected_promotions\": 0\n}\n"
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "olp_swarm_gate",
+        "tests",
+        "benchmarks/successor-promotion",
+        "examples",
+        "scripts"
+      ],
+      "name": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "/tmp/swarm-gate-wheel-ga0qyfg3/src",
+        "--no-deps",
+        "--no-build-isolation",
+        "-q",
+        "-w",
+        "/tmp/swarm-gate-wheel-ga0qyfg3/wheels"
+      ],
+      "name": "wheel_build",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n",
+      "stdout": ""
+    },
+    {
+      "name": "wheel_contains_frozen_benchmark",
+      "passed": true,
+      "wheel_count": 1
+    },
+    {
+      "name": "wheel_declares_ed25519_runtime_dependency",
+      "passed": true
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "/tmp/swarm-gate-wheel-ga0qyfg3/venv"
+      ],
+      "name": "create_clean_venv",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "cmd": [
+        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "/tmp/swarm-gate-wheel-ga0qyfg3/wheels/openline_swarm_improvement_gate-0.2.0rc3-py3-none-any.whl",
+        "--no-deps",
+        "-q"
+      ],
+      "name": "clean_wheel_install",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n",
+      "stdout": ""
+    },
+    {
+      "cmd": [
+        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/python",
+        "-c",
+        "import cryptography, olp_swarm_gate; assert olp_swarm_gate.__version__ == '0.2.0rc3'; print('ok', cryptography.__version__)"
+      ],
+      "name": "installed_import_smoke",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "ok 43.0.0\n"
+    },
+    {
+      "cmd": [
+        "/tmp/swarm-gate-wheel-ga0qyfg3/venv/bin/olp-swarm-gate",
+        "successor-benchmark"
+      ],
+      "name": "installed_cli_successor_benchmark",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"schema\": \"openline.swarm_improvement_gate.successor_benchmark_report.v0.3\",\n  \"profile_id\": \"successor-promotion-v2-signed-appraisal\",\n  \"frozen_before_outcomes\": true,\n  \"case_count\": 26,\n  \"decision_counts\": {\n    \"PROMOTE\": 1,\n    \"QUARANTINE\": 22,\n    \"REJECT\": 3\n  },\n  \"all_cases_match_expected\": true,\n  \"passed\": true,\n  \"cases\": [\n    {\n      \"case_id\": \"legitimate_successor\",\n      \"decision\": \"PROMOTE\",\n      \"quarantine_flags\": [],\n      \"reject_flags\": [],\n      \"promotion_intent\": {\n        \"action\": \"promote_successor_version\",\n        \"source_version_hash\": \"99a1c79ade06b931b42d4e8d8db265a046c9a17117fbd2babf60cdc7dfafb017\",\n        \"successor_version_hash\": \"69c3136079027fa365533b241211e6c5fd491c3efdba975bd7d4261166d3f340\",\n        \"proposal_id\": \"promotion-001\",\n        \"appraisal_receipt_hash\": \"1308993a5e9f0e683e21faeb40e695f96b4526a04db1e434f699100c94088fd5\",\n        \"frozen_policy_hash\": \"3c6d0663679324693f2872ed11fb86b4788efaa4995e322e22346456c89df825\",\n        \"enforcement\": \"NOT_EXECUTED_BY_SWARM_IMPROVEMENT_GATE\",\n        \"next_enforcer\": \"openline-receipt-gate/verified-commit\"\n      },\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"successor_self_evaluates\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"successor_proposer_is_evaluator\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"evaluator_hash_not_frozen\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"evaluator_hash_not_frozen\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"heldout_set_not_frozen\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"heldout_set_not_frozen\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"appraisal_policy_not_frozen\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_policy_not_frozen\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"replayed_appraisal_wrong_successor\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_wrong_successor_version\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"source_version_not_current\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"source_version_not_current\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"stale_appraisal\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_stale\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"missing_relation_history\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"missing_relation_history\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"incomplete_evaluation\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"evaluation_incomplete\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"heldout_regression\",\n      \"decision\": \"REJECT\",\n      \"quarantine_flags\": [],\n      \"reject_flags\": [\n        \"heldout_delta_regressed\"\n      ],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"critical_failure\",\n      \"decision\": \"REJECT\",\n      \"quarantine_flags\": [],\n      \"reject_flags\": [\n        \"critical_failure_detected\"\n      ],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"candidate_below_floor\",\n      \"decision\": \"REJECT\",\n      \"quarantine_flags\": [],\n      \"reject_flags\": [\n        \"candidate_score_below_floor\"\n      ],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"no_version_delta\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"successor_has_no_version_delta\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"proposer_owns_benchmark\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"benchmark_owner_not_frozen\",\n        \"successor_proposer_owns_benchmark\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"missing_appraisal_receipt\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"missing_or_invalid_appraisal_receipt\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"forged_hash_without_artifact\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_receipt_not_found\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"appraisal_payload_tampered_after_receipt\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_receipt_payload_mismatch\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"materialized_receipt_tampered\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_receipt_hash_mismatch\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"invalid_destination_chain\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"invalid_destination_receipt_chain\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"nonfinite_derived_delta\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"nonfinite_heldout_delta\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"malformed_proposal_id_type\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"invalid_proposal_id\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"copied_evaluator_metadata_unsigned\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_signature_missing\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"copied_evaluator_metadata_attacker_signed\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_signer_not_pinned\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"copied_pinned_key_fake_signature\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_signature_invalid\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    },\n    {\n      \"case_id\": \"reused_signature_after_score_swap\",\n      \"decision\": \"QUARANTINE\",\n      \"quarantine_flags\": [\n        \"appraisal_signature_invalid\"\n      ],\n      \"reject_flags\": [],\n      \"promotion_intent\": null,\n      \"matches_expected\": true\n    }\n  ],\n  \"claim_boundary\": \"Synthetic frozen fixtures validate receiver-owned successor-promotion mechanics, including receiver-pinned Ed25519 appraisal provenance, materialized content binding, and fail-closed decision history. They do not establish live recursive self-improvement performance or that possession of the pinned evaluator private key is operationally independent of the successor.\"\n}\n"
+    },
+    {
+      "forbidden": [],
+      "name": "no_bytecode_in_release_tree",
+      "passed": true
+    }
+  ],
+  "checks_passed": 24,
+  "checks_total": 24,
+  "feature": "successor_promotion",
+  "passed": true,
+  "schema": "openline.swarm_improvement_gate.release_verification.v0.3",
+  "version": "0.2.0rc3"
+}

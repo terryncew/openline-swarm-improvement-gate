@@ -1,26 +1,7 @@
 # Stack Position
 
-```text
-Receipt Gate
-  governs risky actions
+- **Eval Airlock:** produces the appraisal evidence and signs the exact appraisal with its evaluator key.
+- **Swarm Improvement Gate:** verifies the receiver-pinned evaluator signature plus evidence/policy bindings and decides whether this exact successor deserves propagation.
+- **Receipt Gate / Verified Commit:** decides whether the exact promotion action may execute now.
 
-Eval Airlock
-  verifies score and fitness claims
-
-Agent Health Monitor
-  checks drift, loops, and run stress
-
-Swarm Improvement Gate
-  governs self-change
-
-OpenLine Exchange
-  lets committed receipts travel
-```
-
-Receipt Gate says:
-
-> The agent cannot just say it did the thing. It has to pass the gate.
-
-Swarm Improvement Gate says:
-
-> The agent cannot just say it improved itself. The improvement has to pass the gate.
+v0.2.0rc3 strengthens the first handoff with receiver-pinned Ed25519 appraisal provenance. It does not absorb evaluation or execution authority into the Swarm Gate.

@@ -1,0 +1,42 @@
+{
+  "attack1_self_eval_lie": {
+    "decision": "QUARANTINE",
+    "flags": [
+      "evaluator_independence_self_report_mismatch",
+      "evaluator_is_mutating_agent"
+    ]
+  },
+  "attack2_protected_evasion": {
+    "decision": "QUARANTINE",
+    "flags": [
+      "protected_component_requires_distinct_bound_guardian_quorum"
+    ],
+    "protected": true
+  },
+  "attack3_fake_guardians": {
+    "decision": "QUARANTINE",
+    "flags": [
+      "guardian_receipt_chain_invalid",
+      "protected_component_requires_distinct_bound_guardian_quorum"
+    ],
+    "valid_guardian_ids": []
+  },
+  "attack4_quorum_of_one": {
+    "decision": "QUARANTINE",
+    "flags": [
+      "guardian_quorum_not_distinct",
+      "protected_component_requires_distinct_bound_guardian_quorum"
+    ],
+    "valid_guardian_ids": [
+      "g1"
+    ]
+  },
+  "attack5_approval_replay": {
+    "decision": "QUARANTINE",
+    "flags": [
+      "guardian_receipt_wrong_mutation_binding",
+      "protected_component_requires_distinct_bound_guardian_quorum"
+    ],
+    "valid_guardian_ids": []
+  }
+}

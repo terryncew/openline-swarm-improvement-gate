@@ -9,6 +9,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 
+class InvalidReceiptChainError(RuntimeError):
+    """Raised when an append would extend an already-invalid receipt chain."""
+
+
+
 def canonical_json(obj: Any) -> str:
     return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
@@ -63,13 +68,18 @@ def last_hash(path: str | Path) -> Optional[str]:
 
 
 def append_receipt(path: str | Path, body: Dict[str, Any]) -> Dict[str, Any]:
+    p = Path(path)
+    chain = verify_chain(p)
+    startable = chain["missing"] or chain["empty"]
+    if not chain["valid"] and not startable:
+        raise InvalidReceiptChainError("refusing to append to invalid receipt chain")
+
     receipt = dict(body)
     receipt.setdefault("schema", "openline.swarm_improvement_gate.v0.1")
     receipt.setdefault("receipt_id", str(uuid.uuid4()))
     receipt.setdefault("timestamp", time.time())
-    receipt["parent_hash"] = last_hash(path)
+    receipt["parent_hash"] = chain["last_hash"] if chain["valid"] else None
     receipt["receipt_hash"] = sha256_json({k: v for k, v in receipt.items() if k != "receipt_hash"})
-    p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a", encoding="utf-8") as f:
         f.write(json.dumps(receipt, sort_keys=True, ensure_ascii=False) + "\n")

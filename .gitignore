@@ -3,5 +3,7 @@ __pycache__/
 .pytest_cache/
 .env
 .DS_Store
+build/
+dist/
+*.egg-info/
 receipts/*.jsonl
-results/*.json

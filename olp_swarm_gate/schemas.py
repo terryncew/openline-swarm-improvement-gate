@@ -12,6 +12,12 @@ class ImprovementDecision(str, Enum):
     NO_BADGE = "NO_BADGE"
 
 
+class PromotionDecision(str, Enum):
+    PROMOTE = "PROMOTE"
+    QUARANTINE = "QUARANTINE"
+    REJECT = "REJECT"
+
+
 @dataclass(frozen=True)
 class MutationProposal:
     """A proposed self-change from a swarm member."""
@@ -65,6 +71,47 @@ class HealthReport:
     cycle_score: float = 0.0
     ucr: float = 0.0
     timestamp: float = field(default_factory=time.time)
+
+    def to_public_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class SuccessorProposal:
+    """Version A proposes one exact successor B for promotion."""
+    proposal_id: str
+    proposer_id: str
+    source_version_id: str
+    source_version_hash: str
+    successor_version_id: str
+    successor_version_hash: str
+    change_summary: str
+    created_at: float
+
+    def to_public_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class EvalAirlockAppraisal:
+    """Receiver-consumable appraisal evidence produced outside the successor."""
+    appraisal_receipt_hash: str
+    evaluator_id: str
+    evaluator_hash: str
+    benchmark_id: str
+    benchmark_version: str
+    benchmark_owner: str
+    heldout_set_hash: str
+    policy_hash: str
+    relation_history_hash: str
+    source_version_hash: str
+    successor_version_hash: str
+    baseline_score: float
+    candidate_score: float
+    critical_failures: int
+    evaluation_complete: bool
+    evidence_status: str
+    issued_at: float
 
     def to_public_dict(self) -> Dict[str, Any]:
         return asdict(self)
