@@ -13,6 +13,9 @@ Closes the evaluator-impersonation seam found during adversarial review.
 - Narrows the public claim: cryptographic provenance proves possession of the pinned evaluator key, not organizational independence or secure key custody.
 - Keeps promotion execution outside this repo; Receipt Gate / Verified Commit remains the next enforcer.
 - Adds a GitHub Actions release gate that runs the stdlib unit suite, frozen successor benchmark, and the same full release verification used locally.
+- Hardens `release_check.py` against same-version package collisions in polluted CI environments by force-reinstalling the candidate wheel into its nested verification venv.
+- Requires the installed-wheel smoke test to prove `olp_swarm_gate` resolves from that nested venv, not merely from a parent/system installation.
+- Converts subprocess launch errors such as a missing console script into explicit failed checks instead of crashing the release gate.
 
 ## 0.2.0rc2
 

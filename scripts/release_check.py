@@ -16,9 +16,20 @@ EXPECTED_COUNTS = {"PROMOTE": 1, "QUARANTINE": 22, "REJECT": 3}
 
 
 def run(cmd, *, cwd=ROOT, env=None):
-    proc = subprocess.run(cmd, cwd=cwd, env=env, text=True, capture_output=True)
+    rendered = [str(x) for x in cmd]
+    try:
+        proc = subprocess.run(cmd, cwd=cwd, env=env, text=True, capture_output=True)
+    except OSError as exc:
+        return {
+            "cmd": rendered,
+            "returncode": 127,
+            "stdout": "",
+            "stderr": f"{type(exc).__name__}: {exc}",
+            "passed": False,
+            "error_type": type(exc).__name__,
+        }
     return {
-        "cmd": [str(x) for x in cmd],
+        "cmd": rendered,
         "returncode": proc.returncode,
         "stdout": proc.stdout,
         "stderr": proc.stderr,
@@ -133,7 +144,10 @@ def main() -> int:
         py = venv / "bin" / "python"
         cli = venv / "bin" / "olp-swarm-gate"
         if wheel and create_venv["passed"]:
-            install = run([str(py), "-m", "pip", "install", str(wheel), "--no-deps", "-q"], cwd=td_path)
+            # The parent CI interpreter may already have this exact version installed.
+            # Force an overlay into the nested venv so the smoke test exercises the
+            # candidate wheel and creates the venv-local console script deterministically.
+            install = run([str(py), "-m", "pip", "install", str(wheel), "--no-deps", "--force-reinstall", "-q"], cwd=td_path)
         else:
             install = {"cmd": [], "returncode": 2, "stdout": "", "stderr": "wheel or venv unavailable", "passed": False}
         install["name"] = "clean_wheel_install"
@@ -141,7 +155,15 @@ def main() -> int:
 
         unrelated = td_path / "unrelated"
         unrelated.mkdir()
-        smoke = run([str(py), "-c", f"import cryptography, olp_swarm_gate; assert olp_swarm_gate.__version__ == '{EXPECTED_VERSION}'; print('ok', cryptography.__version__)"], cwd=unrelated) if install["passed"] else {"cmd": [], "returncode": 2, "stdout": "", "stderr": "install failed", "passed": False}
+        smoke_code = (
+            "from pathlib import Path; import cryptography, olp_swarm_gate, sys; "
+            f"assert olp_swarm_gate.__version__ == '{EXPECTED_VERSION}'; "
+            "package_path = Path(olp_swarm_gate.__file__).resolve(); "
+            "venv_root = Path(sys.prefix).resolve(); "
+            "assert package_path.is_relative_to(venv_root), (package_path, venv_root); "
+            "print('ok', cryptography.__version__, package_path)"
+        )
+        smoke = run([str(py), "-c", smoke_code], cwd=unrelated) if install["passed"] else {"cmd": [], "returncode": 2, "stdout": "", "stderr": "install failed", "passed": False}
         smoke["name"] = "installed_import_smoke"
         checks.append(smoke)
 

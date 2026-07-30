@@ -12,19 +12,26 @@
     "unexpected_promotions": 0
   },
   "ci": {
+    "candidate_wheel_force_reinstall_verified": true,
     "commands": [
       "python -m unittest discover -s tests -v",
       "python -m olp_swarm_gate.successor_benchmark",
       "python scripts/release_check.py"
     ],
     "github_status": "PENDING_PUSH",
-    "local_equivalence_verified": true,
+    "local_equivalence_boundary": "Sandbox used Python 3.13 and could not perform the networked packaging-tool upgrade/build-isolation step exactly; GitHub Actions remains the Python 3.11 authority.",
+    "local_equivalence_verified": false,
+    "local_release_gate_verified": true,
+    "local_verification_python": "3.13.5",
+    "missing_subprocess_fails_closed_verified": true,
+    "polluted_parent_environment_verified": true,
     "python_version": "3.11",
     "triggers": [
       "push:main",
       "pull_request",
       "workflow_dispatch"
     ],
+    "venv_local_import_verified": true,
     "workflow": ".github/workflows/ci.yml"
   },
   "claim": "Receiver-pinned Ed25519 provenance is required before a successor appraisal can support PROMOTE; copied evaluator metadata alone is insufficient.",
@@ -66,7 +73,7 @@
     "profile_id": "successor-promotion-v2-signed-appraisal"
   },
   "tests": {
-    "count": 54,
+    "count": 55,
     "passed": true,
     "runner": "stdlib unittest"
   },
